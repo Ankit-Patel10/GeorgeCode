@@ -9,6 +9,7 @@
             "name": "Extension",
             "type": "extensionHost",
             "request": "launch",
+            "file":"${file}",
             "runtimeExecutable": "${execPath}",
             "args": [
                 "--extensionDevelopmentPath=${workspaceFolder}"

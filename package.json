@@ -3,7 +3,7 @@
     "displayName": "GerogeCode",
     "description": "VS Code syntax highlightin for .grg files",
     "version": "0.0.1",
-    "publisher": "Nim",
+    "publisher": "Nim,Ankit,Taha",
     "engines": {
         "vscode": "^1.23.0"
     },
