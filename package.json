@@ -3,6 +3,7 @@
     "displayName": "GerogeCode",
     "description": "VS Code syntax highlighting for .grg files and george command to run",
     "version": "0.0.1",
+    "icon": "./images/georgey_icon.png",
     "publisher": "Nim,Ankit,Taha",
     "engines": {
         "vscode": "^1.23.0"
