@@ -36,6 +36,7 @@
     "dependencies": {
         "bluebird": "^3.5.2",
         "fs": "0.0.1-security",
-        "request": "2.88.0"
+        "request": "2.88.0",
+        "xmlhttprequest": "^1.8.0"
     }
 }

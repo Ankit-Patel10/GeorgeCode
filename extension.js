@@ -1,7 +1,7 @@
 // The module 'vscode' contains the VS Code extensibility API
 // Import the module and reference it with the alias vscode in your code below
 const vscode = require('vscode');
-// const george = require('./george.js');
+const george = require('./george.js');
 const launch = require('./.vscode/launch.json');
 
 // this method is called when your extension is activated
@@ -17,10 +17,10 @@ function activate(context) {
     // The commandId parameter must match the command field in package.json
     let disposable = vscode.commands.registerCommand('extension.sayHello', function () {
         // The code you place here will be executed every time your command is executed
-        vscode.
-        console.log(launch.configurations[0].runtimeExecutable);
-        // Display a message box to the user
-        vscode.window.showInformationMessage('Hello World!');
+        var x = vscode.window.activeTextEditor.document.getText()
+        george(x, callback => {
+            vscode.window.showInformationMessage(callback);
+        })
     });
 
     context.subscriptions.push(disposable);
