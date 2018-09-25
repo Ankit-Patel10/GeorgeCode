@@ -1,10 +1,13 @@
 {
-    "name": "gerogecode",
-    "displayName": "GerogeCode",
+    "name": "GeorgeCode",
+    "displayName": "GeorgeCode",
     "description": "VS Code syntax highlighting for .grg files and george command to run",
-    "version": "0.0.1",
-    "icon": "./images/georgey_icon.png",
-    "publisher": "Nim,Ankit,Taha",
+    "version": "1.0.0",
+    "icon": "Images/georgey_icon.png",
+    "publisher": "vsgeorgey",
+    "repository": {
+        "url": "https://github.com/Ankit-Patel10/GeorgeCode"
+    },
     "engines": {
         "vscode": "^1.23.0"
     },
