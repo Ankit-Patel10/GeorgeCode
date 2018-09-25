@@ -11,7 +11,7 @@
 
 ## Requirements
 
-VSCode 1.23.0 or higher
+VSCode 1.19.0 or higher
 
 ## Installation
 
@@ -22,7 +22,7 @@ The extension can also be installed by navigating to `users/[username]/.vscode/e
 
 ## How to use
 
-After installing, Press `Ctrl+Shift+P`, and search George. This will run your .grg file and place the results in the output channel titled `George`.
+After installing, Press `Ctrl+Shift+P`, and search `Run George`. This will run your .grg file and place the results in the output channel titled `George`.
 
 ### Contributers
 
