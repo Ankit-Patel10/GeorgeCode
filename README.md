@@ -1,4 +1,4 @@
-#  VSGeorgey
+#  GeorgeCode
 
 ### VSCode extension that allows you to run .grg files locally and includes syntax highlighting for .grg files
 
