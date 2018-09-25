@@ -16,7 +16,7 @@ VSCode 1.23.0 or higher
 Can be installed through VSCode extension marketplace on VSCode Client, or through the web at 
 https://marketplace.visualstudio.com/items?itemName=vsgeorgey.georgecode
 
-The extension can also be installed by navigating to 'users/[username]/.vscode/extensions/' and cloning the repo
+The extension can also be installed by navigating to `users/[username]/.vscode/extensions/` and cloning the repo
 
 ## How to use
 
