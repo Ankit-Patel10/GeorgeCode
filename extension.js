@@ -2,16 +2,19 @@ const vscode = require('vscode');
 const george = require('./george.js');
 const launch = require('./.vscode/launch.json');
 
+
 function activate(context) {
-    
+    this._channel = vscode.window.createOutputChannel("george");
     let disposable = vscode.commands.registerCommand('extension.george', function () {
         var x = vscode.window.activeTextEditor.document.getText()
         george(x, callback => {
-            vscode.window.showInformationMessage(callback);
+            this._channel.appendLine(callback);
         })
     });
 
+    context.subscriptions.push(this._channel);
     context.subscriptions.push(disposable);
+    
 }
 exports.activate = activate;
 
