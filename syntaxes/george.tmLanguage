@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<string>grg</string>
+	</array>
+	<key>name</key>
+	<string>George Highlighting</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>begin</key>
+			<string>#q|#u|#a</string>
+			<key>comment</key>
+			<string>#q, etc</string>
+			<key>end</key>
+			<string>\n</string>
+			<key>name</key>
+			<string>keyword.operator.source.grg</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>#check PROP, etc</string>
+			<key>match</key>
+			<string>#check (PROP|ND|PC|Z|TP|ST|PRED|NONE)\s</string>
+			<key>name</key>
+			<string>variable.parameter.source.grg</string>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>%</string>
+			<key>comment</key>
+			<string>% comment</string>
+			<key>end</key>
+			<string>\n</string>
+			<key>name</key>
+			<string>comment.source.grg</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>assume, case, disprove, etc</string>
+			<key>match</key>
+			<string>disprove|assume|for some|for every|case|equals|inductionstep</string>
+			<key>name</key>
+			<string>keyword.control.source.grg</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>all keywords</string>
+			<key>match</key>
+			<string>AND|NOT|IMP|forall.*?\.|exists.*?\.|true|false|premise|univ|sube|empty|\ssub\s|\sunion\s|\sin\s|\sinter\s|pow\(.*?\)|dom\(.*?\)|ran\(.*?\)|card\(.*?\)|iter\(.*?\)|gen_U|gen_I|closed|schema|begin\s|pred|\send|assert|while.*?do|if.*?then|else|for.*?until.*?do</string>
+			<key>name</key>
+			<string>support.function.grg</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>by (something)</string>
+			<key>match</key>
+			<string>by (and_e|and_i|or_i|or_e|imp_i|imp_e|not_e|cases|comm|assoc|contr|lem|impl|contrapos|simp1|simp2|distr|dm|neg|equiv|idemp|raa|not_not_i|not_not_e|iff_i|trans|iff_e|iff_mp|lem|forall_i|forall_e|exists_i|exists_e|and_nb|not_and_br|or_br|not_or_nb|imp_br|not_imp_nb|not_not_nb|iff_br|not_iff_br|forall_nb|not_forall_nb|not_exists_nb|exists_nb|set|arith|eq_e)</string>
+			<key>name</key>
+			<string>constant.language.source.grg</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>by magic</string>
+			<key>match</key>
+			<string>by magic</string>
+			<key>name</key>
+			<string>invalid.illegal.source.grg</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>on (something)</string>
+			<key>match</key>
+			<string>on[^(%|\n)]*</string>
+			<key>name</key>
+			<string>variable.parameter.grg</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>line numbers</string>
+			<key>match</key>
+			<string>^\s*[0-9]+?\)</string>
+			<key>name</key>
+			<string>string.source.grg</string>
+		</dict>
+	</array>
+	<key>scopeName</key>
+	<string>source.grg</string>
+	<key>uuid</key>
+	<string>e7a54296-b476-48ea-b139-8e9fc5972af3</string>
+</dict>
+</plist>

@@ -8,8 +8,9 @@ module.exports = function(document, callback) {
     url: url,
     body: document
   }, function(error, response, body) {
-    console.log(body);
-    console.log(response);
+    if(error) {
+      callback(error);
+    }
     callback(body);
   })
 }

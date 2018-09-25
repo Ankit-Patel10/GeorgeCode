@@ -20,7 +20,17 @@
                 "command": "extension.george",
                 "title": "George"
             }
-        ]
+        ],
+        "languages": [{
+            "id": "george",
+            "aliases": ["grg", "George"],
+            "extensions": [".grg"]
+        }],
+        "grammars": [{
+            "language": "george",
+            "scopeName": "source.grg",
+            "path": "./syntaxes/george.tmLanguage"
+        }]
     },
     "scripts": {
         "postinstall": "node ./node_modules/vscode/bin/install",
