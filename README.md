@@ -1,5 +1,7 @@
 #  VSGeorgey
 
+![georgey_icon](https://user-images.githubusercontent.com/28830657/46047505-5cb8c900-c0f3-11e8-823a-6e93dbc27429.png)
+
 VSCode extension that allows you to run .grg files locally and includes syntax highlighting for .grg files
 
 ## Features
