@@ -3,9 +3,8 @@ const george = require('./george.js');
 
 function activate(context) {
     this._channel = vscode.window.createOutputChannel("george");
-    let disposable = vscode.commands.registerCommand('extension.george', ()  => {
-        var x = vscode.window.activeTextEditor.document.getText();
-        if(x === undefined) return;
+    let disposable = vscode.commands.registerCommand('extension.george', function () {
+        var x = vscode.window.activeTextEditor.document.getText()
         george(x, callback => {
             this._channel.appendLine(callback);
         })
