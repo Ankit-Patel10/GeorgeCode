@@ -6,6 +6,7 @@ function activate(context) {
     let disposable = vscode.commands.registerCommand('extension.george', function () {
         var x = vscode.window.activeTextEditor.document.getText()
         george(x, callback => {
+            this._channel.clear();
             this._channel.appendLine(callback);
         })
     });
