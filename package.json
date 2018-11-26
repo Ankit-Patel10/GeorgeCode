@@ -28,12 +28,20 @@
         "languages": [{
             "id": "george",
             "aliases": ["grg", "George"],
-            "extensions": [".grg"]
+            "extensions": [".grg"],
+            "configuration": "./language-configuration.json"
         }],
         "grammars": [{
             "language": "george",
             "scopeName": "source.grg",
             "path": "./syntaxes/george.tmLanguage"
+            
+        }],
+        "keybindings": [{
+            "key": "ctrl+/",
+            "mac": "cmd+/",
+            "command": "editor.action.commentLine",
+            "when": "editorTextFocus"
         }]
     },
     "scripts": {
