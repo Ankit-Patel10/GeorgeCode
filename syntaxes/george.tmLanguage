@@ -74,7 +74,7 @@
 			<key>comment</key>
 			<string>on (something)</string>
 			<key>match</key>
-			<string>on[^(%|\n)]*</string>
+			<string>\bon\b</string>
 			<key>name</key>
 			<string>variable.parameter.grg</string>
 		</dict>
