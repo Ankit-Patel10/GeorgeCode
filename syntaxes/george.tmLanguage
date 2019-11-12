@@ -24,7 +24,7 @@
 			<key>comment</key>
 			<string>#check PROP, etc</string>
 			<key>match</key>
-			<string>#check (PROP|ND|PC|Z|TP|ST|PRED|NONE)\s</string>
+			<string>^#check (PROP|ND|PC|Z|TP|ST|PRED|NONE)\s</string>
 			<key>name</key>
 			<string>variable.parameter.source.grg</string>
 		</dict>
@@ -42,7 +42,7 @@
 			<key>comment</key>
 			<string>assume, case, disprove, etc</string>
 			<key>match</key>
-			<string>disprove|assume|for some|for every|case|equals|inductionstep</string>
+			<string>(disprove|assume|for some|for every|case|equals|inductionstep)\s</string>
 			<key>name</key>
 			<string>keyword.control.source.grg</string>
 		</dict>
@@ -50,7 +50,7 @@
 			<key>comment</key>
 			<string>all keywords</string>
 			<key>match</key>
-			<string>AND|NOT|IMP|forall.*?\.|exists.*?\.|true|false|premise|univ|sube|empty|\ssub\s|\sunion\s|\sin\s|\sinter\s|pow\(.*?\)|dom\(.*?\)|ran\(.*?\)|card\(.*?\)|iter\(.*?\)|gen_U|gen_I|closed|schema|begin\s|pred|\send|assert|while.*?do|if.*?then|else|for.*?until.*?do</string>
+			<string>(AND|NOT|IMP|forall.*?\.|exists.*?\.|true|false|premise|univ|sube|empty|\ssub|\sunion|\sin|\sinter|pow\(.*?\)|dom\(.*?\)|ran\(.*?\)|card\(.*?\)|iter\(.*?\)|gen_U|gen_I|closed|schema|begin|pred|\send|assert|while.*?do|if.*?then|else|for.*?until.*?do)\s</string>
 			<key>name</key>
 			<string>support.function.grg</string>
 		</dict>
@@ -66,7 +66,7 @@
 			<key>comment</key>
 			<string>by magic</string>
 			<key>match</key>
-			<string>by magic</string>
+			<string>\bby magic\b</string>
 			<key>name</key>
 			<string>invalid.illegal.source.grg</string>
 		</dict>
@@ -74,7 +74,7 @@
 			<key>comment</key>
 			<string>on (something)</string>
 			<key>match</key>
-			<string>on[^(%|\n)]*</string>
+			<string>\bon\b</string>
 			<key>name</key>
 			<string>variable.parameter.grg</string>
 		</dict>
